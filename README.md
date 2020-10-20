@@ -9,4 +9,4 @@ Now, to generate that sequence is more complicated.
 It relies on partition numbers, and to get that sequence requires another sequence, which itself requires a sequence.
 
 Basically, the Spaces sequence makes the Arr sequence, which in turn creates the Sequence described above.
-=
+
