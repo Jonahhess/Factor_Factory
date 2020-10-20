@@ -54,7 +54,7 @@ int main() {
 
         if (sequence[i] == 1) {
             std::cout << i << ' ';
-            primes << i << '/n';
+            primes << i << '\n';
         }
     }
     system("pause");
