@@ -49,7 +49,7 @@ int main() {
     MakeSequence(arr,sequence);
     std::ofstream primes("primes.txt");
 
-    for (int i = 0; i < N; i++) {
+    for (int i = 2; i < N; i++) {
         sequence[i] -= i;
 
         if (sequence[i] == 1) {
