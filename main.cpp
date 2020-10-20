@@ -6,13 +6,11 @@ const int N = 10000;
     // Implemented by: Jonah Hess
 
 void MakeSpaces(long long spaces[N]) {
-    for (int i = 0; i < N; i++) {
-        if (i % 2 == 0) {
-            spaces[i] = i+1;
-        } 
-        else {
-            spaces[i] = i/2+1;
-        }
+    for (int i = 0; i < N; i=i+2) {
+           spaces[i] = i+1;
+    } 
+    for (int i = 1; i < N; i=i+2) {
+        spaces[i] = i/2+1;
     }
 }
 
@@ -28,7 +26,7 @@ void MakeSequence(long long arr[N],long long sequence[N]) {
     sequence[0] = 1;
 
     for (int i = 1; i < N; i++) {
-        sum = 0; j = 0; sign = 1;
+        sum = 0, j = 0, sign = 1;
 
         while (arr[j] <= i) {
             sum += sign * sequence[i-arr[j]];
